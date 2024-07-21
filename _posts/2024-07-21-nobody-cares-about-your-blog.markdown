@@ -3,6 +3,7 @@ layout: post
 title: "Nobody cares about your blog."
 description: Nobody cares about your blog, but you should keep writing!
 tags: opinion
+category: 
 favourite: true
 ---
 
