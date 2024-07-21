@@ -22,10 +22,11 @@ title: Thomas Francis
 email: mail@thomasfrancis.page
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my blog. Here I document my thoughts and adventure - mostly for my future self.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: /blog # the subpath of your site, e.g. /blog
 url: "https://thomasfrancis.page" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: th0masfrancis
 github_username:  th0masfrancis
+permalink: pretty
 
 # Build settings
 theme: minima
