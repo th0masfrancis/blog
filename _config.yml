@@ -21,9 +21,7 @@
 title: Thomas Francis
 email: mail@thomasfrancis.page
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to my blog. Here I document my thoughts and adventure - mostly for my future self.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thomasfrancis.page" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: th0masfrancis
@@ -33,6 +31,18 @@ github_username:  th0masfrancis
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-toc
+# Table of content settings
+toc:
+  min_level: 1
+  max_level: 1
+  ordered_list: true
+  no_toc_section_class: no_toc_section
+  list_id: toc
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
