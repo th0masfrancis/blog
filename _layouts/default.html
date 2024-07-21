@@ -1,0 +1,75 @@
+---
+layout: none
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/syntax.css' | relative_url }}">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% if jekyll.environment == 'production' %}
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics.id }}');
+      });
+    </script>
+  {% endif %}
+
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+          displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
+          processEscapes: true
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'pre', 'code'],
+          ignoreHtmlClass: 'tex2jax_ignore',
+          processHtmlClass: 'tex2jax_process'
+        }
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <center>
+        <a href="/">Home</a> ·
+        <a href="/about.html">About</a> ·
+        <a href="/blog.html">Blog</a> ·
+        <a href="/services.html">Services</a> 
+      </center>
+    </nav>
+  </header>
+
+  <hr>
+
+  <!-- Main Content -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <hr>
+    <center><small>
+      <a href="/feed.xml">RSS</a> · 
+      <a href="{{ site.twitter_link }}">Twitter</a> · 
+      <a href="{{ site.github_link }}">GitHub</a> · 
+      <a href="/blogroll.html">Blogroll</a> · 
+    </small></center>
+  </footer>
+</body>
+</html>
